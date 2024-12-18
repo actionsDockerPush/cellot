@@ -42,7 +42,7 @@ jobs:
           push: true
           platforms: linux/amd64
           tags:
-            ooaahhdocker/test1:latest, ooaahhdocker/cellOT:${{ github.ref_name }} # 使用commit名作为镜像标签
+            ooaahhdocker/test1:latest, ooaahhdocker/cellot:${{ github.ref_name }} # 使用commit名作为镜像标签
           cache-from: type=registry,ref=ooaahhdocker/test1:latest # 如果有缓存镜像
           cache-to: type=inline
 
