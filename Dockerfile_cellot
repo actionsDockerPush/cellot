@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 RUN python setup.py develop
 RUN wget -c https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/609681/processed_datasets_all.zip?sequence=1&isAllowed=y
 RUN mv processed_datasets_all.zip?sequence=1 processed_datasets_all.zip
-RUN unzip processed_datasets_all.zip
+RUN unzip processed_datasets_all.zip -d ./datasets
